@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MedPlex Physician Network is a smart, AI-enabled healthcare platform connecting independent physicians, patients and employers across a scalable multi-market network.">
+  <title>MedPlex Physician Network</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 64 64&#39;%3E%3Crect width=&#39;64&#39; height=&#39;64&#39; rx=&#39;14&#39; fill=&#39;%2307111f&#39;/%3E%3Cpath d=&#39;M15 19h13l4 9 4-9h13v26H38V32l-6 11-6-11v13H15z&#39; fill=&#39;%236fbd45&#39;/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#07111f;--ink2:#0c1a2d;--blue:#17365d;--green:#6fbd45;--green2:#9be56a;--ice:#eef5f8;--paper:#f8fbfc;--white:#fff;--muted:#607084;--line:rgba(7,17,31,.12);--shadow:0 24px 80px rgba(8,24,42,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-size:16px;line-height:1.55}button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--green)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(3.4rem,8vw,7.2rem);line-height:.88;letter-spacing:-.065em;max-width:950px;margin-bottom:28px}h2{font-size:clamp(2.2rem,4vw,4.4rem);line-height:1;letter-spacing:-.05em;margin-bottom:22px}h3{font-size:1.3rem;line-height:1.15}.lead{font-size:clamp(1.05rem,1.8vw,1.35rem);color:#d6e0eb;max-width:730px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;padding:13px 20px;border-radius:999px;font-weight:750;transition:.25s}.btn-primary{background:var(--green);color:var(--ink)}.btn-primary:hover{background:var(--green2);transform:translateY(-2px)}.btn-ghost{border-color:rgba(255,255,255,.24);color:var(--white)}.btn-ghost:hover{border-color:var(--green);background:rgba(111,189,69,.08)}
+    header{position:fixed;z-index:20;top:0;left:0;right:0;background:rgba(7,17,31,.76);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:baseline;gap:8px;font-weight:850;letter-spacing:.01em;color:var(--white)}.brand b{color:var(--green);font-size:1.35rem}.brand span{font-size:.98rem}.navlinks{display:flex;align-items:center;gap:24px;color:#c8d3df;font-size:.9rem}.navlinks a:hover{color:var(--white)}.menu{display:none;background:none;border:0;color:white;font-size:1.5rem}
+    .hero{min-height:100vh;color:var(--white);background-color:#07111f;background-image:radial-gradient(circle at 80% 40%,rgba(111,189,69,.22),transparent 45%),linear-gradient(90deg,#07111f 0%,#0c1a2d 60%,#17365d 100%);background-size:cover;background-position:center;position:relative;overflow:hidden;padding:150px 0 78px;display:flex;align-items:center}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to right,black,transparent)}.hero-grid{position:relative;z-index:2}.hero h1{max-width:1040px}.hero h1 span{display:block;color:var(--green)}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.hero-meta{margin-top:62px;display:grid;grid-template-columns:repeat(4,1fr);max-width:940px;border-top:1px solid rgba(255,255,255,.16)}.hero-meta div{padding:18px 14px 0 0;color:#9fb0c1}.hero-meta strong{display:block;color:white;font-size:1.35rem;letter-spacing:-.03em}.orb{position:absolute;width:680px;height:680px;right:-220px;bottom:-260px;border:1px solid rgba(111,189,69,.28);border-radius:50%;animation:spin 24s linear infinite}.orb:before,.orb:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.12)}.orb:before{inset:90px}.orb:after{inset:210px}@keyframes spin{to{transform:rotate(360deg)}}
+    .network{background:var(--ink2);color:var(--white);overflow:hidden}.network-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px;align-items:center}.network-copy p{color:#afbdca;font-size:1.08rem}.network-copy .btn{margin-top:16px}.system-map{position:relative;min-height:510px;border:1px solid rgba(255,255,255,.12);background:radial-gradient(circle at 50% 48%,rgba(111,189,69,.13),transparent 42%),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:auto,42px 42px,42px 42px}.system-core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:170px;height:170px;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--green);color:var(--ink);font-weight:900;box-shadow:0 0 0 28px rgba(111,189,69,.07);z-index:3}.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border:1px dashed rgba(111,189,69,.45);border-radius:50%}.ring-one{width:330px;height:330px}.ring-two{width:450px;height:450px;border-color:rgba(255,255,255,.2)}.site-node{position:absolute;width:78px;height:78px;border-radius:50%;display:grid;place-items:center;text-align:center;font-size:.74rem;font-weight:800;line-height:1.1;border:1px solid rgba(255,255,255,.16);background:#142942;color:white;z-index:2}.site-node.hub{background:var(--blue);border-color:var(--green);box-shadow:0 0 0 7px rgba(111,189,69,.06)}.s1{left:calc(50% - 39px);top:22px}.s2{right:72px;top:105px}.s3{right:38px;bottom:92px}.s4{left:64px;bottom:72px}.s5{left:48px;top:116px}.satellite-label{position:absolute;right:22px;bottom:18px;color:#91a3b5;font-size:.82rem}.network-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}.network-fact{padding:18px;border-top:1px solid rgba(255,255,255,.16);color:#aebdca}.network-fact strong{display:block;color:white;font-size:1.05rem;margin-bottom:5px}
+    section{padding:105px 0}.intro{background:var(--white)}.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:start}.intro-copy{font-size:1.18rem;color:var(--muted)}.service-list{border-top:1px solid var(--line)}.service{display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);transition:.25s}.service:hover{padding-left:12px}.service-num{color:var(--green);font-weight:850}.service h3{margin:0}.service small{color:var(--muted)}
+    .platform{background:var(--ink);color:var(--white);overflow:hidden}.platform-head{display:flex;justify-content:space-between;gap:60px;align-items:end}.platform-head p{max-width:520px;color:#aebdcb}.path-tabs{display:flex;gap:8px;margin:42px 0 30px;flex-wrap:wrap}.path-tab{border:1px solid rgba(255,255,255,.15);background:transparent;color:#c6d1dc;padding:12px 18px;border-radius:999px}.path-tab.active{background:var(--green);border-color:var(--green);color:var(--ink);font-weight:800}.path-panel{display:none;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.path-panel.active{display:grid}.path-panel h3{font-size:clamp(2rem,4vw,3.7rem);letter-spacing:-.045em}.path-panel p{color:#b8c5d1;font-size:1.08rem}.flow{position:relative;min-height:360px;display:grid;place-items:center}.flow-core{width:150px;height:150px;border-radius:50%;background:var(--green);color:var(--ink);display:grid;place-items:center;text-align:center;font-weight:850;z-index:2;box-shadow:0 0 0 22px rgba(111,189,69,.08)}.flow-node{position:absolute;background:#14263d;border:1px solid rgba(255,255,255,.15);padding:10px 15px;border-radius:999px;color:#dce5ed}.n1{top:28px}.n2{right:15px;top:145px}.n3{bottom:28px}.n4{left:15px;top:145px}.flow-line{position:absolute;width:260px;height:260px;border:1px dashed rgba(111,189,69,.45);border-radius:50%;animation:spin 20s linear infinite}
+    .memberships{background:linear-gradient(180deg,var(--ice),var(--white))}.membership-head{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:end}.toggle{justify-self:end;display:flex;background:#dfe8ec;padding:5px;border-radius:999px}.toggle button{border:0;background:transparent;padding:10px 15px;border-radius:999px;color:var(--muted)}.toggle button.active{background:var(--ink);color:white}.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:46px}.tier{background:white;border:1px solid var(--line);padding:28px 24px;min-height:360px;display:flex;flex-direction:column;transition:.3s}.tier:hover{transform:translateY(-8px);box-shadow:var(--shadow)}.tier.featured{background:var(--ink);color:white;border-color:var(--ink)}.tier-name{font-size:1.25rem;font-weight:850}.price{font-size:2.4rem;letter-spacing:-.05em;font-weight:850;margin:18px 0}.price small{font-size:.8rem;letter-spacing:0;font-weight:500;color:var(--muted)}.tier.featured .price small{color:#aabaca}.tier ul{padding:0;list-style:none;color:var(--muted);font-size:.92rem}.tier.featured ul{color:#c3cfda}.tier li{padding:7px 0;border-bottom:1px solid var(--line)}.tier.featured li{border-color:rgba(255,255,255,.12)}.tier .tag{margin-top:auto;color:var(--green);font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.09em}
+    .space{background:white}.space-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px;align-items:center}.space-copy p{color:var(--muted);font-size:1.05rem}.stack{height:420px;display:flex;flex-direction:column;gap:7px}.bar{display:flex;align-items:center;justify-content:space-between;padding:0 22px;color:white;min-height:46px;position:relative;overflow:hidden}.bar:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15));transform:translateX(-100%);transition:.8s}.bar:hover:after{transform:translateX(100%)}.bar strong{position:relative;z-index:1}.bar span{position:relative;z-index:1;font-size:.85rem}.b1{background:#183a63;flex:7}.b2{background:#315d88;flex:4.5}.b3{background:#4f8e3a;flex:2.5}.b4{background:#356b4f;flex:2.4}.b5{background:#45799f;flex:2.3}.b6{background:#667788;flex:3.3}.b7{background:#293a4c;flex:1}.formats{background:var(--ice)}.format-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:42px}.format{background:white;border:1px solid var(--line);padding:34px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start}.format-number{font-size:3.6rem;line-height:.85;font-weight:900;color:var(--green);letter-spacing:-.07em}.format p{color:var(--muted);margin-bottom:0}.format ul{grid-column:2;padding-left:18px;color:var(--muted);margin:4px 0 0}.format li{margin:6px 0}.format small{display:block;color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.11em;margin-bottom:8px}
+    .cta{padding:120px 0;background:var(--green);position:relative;overflow:hidden}.cta h2{max-width:900px;font-size:clamp(3rem,7vw,6.6rem)}.cta p{max-width:600px;font-size:1.15rem}.cta .btn{background:var(--ink);color:white;margin-top:20px}.cta-mark{position:absolute;right:-60px;bottom:-180px;font-size:28rem;line-height:1;font-weight:900;color:rgba(255,255,255,.14)}
+    footer{background:var(--ink);color:white;padding:46px 0}.foot{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}.foot p{color:#99aabc;margin:8px 0 0}.foot small{color:#7f91a3}
+    .reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.on{opacity:1;transform:none}
+    @media(max-width:900px){.navlinks a:not(.nav-cta){display:none}.intro-grid,.membership-head,.space-grid,.path-panel,.network-grid{grid-template-columns:1fr;gap:36px}.tiers{grid-template-columns:repeat(2,1fr)}.toggle{justify-self:start}.hero-meta{grid-template-columns:repeat(2,1fr)}.platform-head{display:block}.space-grid{gap:45px}.system-map{min-height:480px}.format-grid{grid-template-columns:1fr}}
+    @media(max-width:600px){.wrap{width:min(100% - 28px,1180px)}nav{height:68px}.brand span{font-size:.75rem}.hero{padding-top:125px}h1{font-size:3.25rem}.hero-meta{grid-template-columns:1fr 1fr}.tiers{grid-template-columns:1fr}.tier{min-height:0}.flow{transform:scale(.84);margin:-24px}.foot{display:block}.foot small{display:block;margin-top:20px}.cta-mark{display:none}.navlinks .btn{padding:9px 13px}.system-map{min-height:410px}.ring-one{width:250px;height:250px}.ring-two{width:340px;height:340px}.system-core{width:130px;height:130px}.site-node{width:62px;height:62px;font-size:.65rem}.s1{top:18px;left:calc(50% - 31px)}.s2{right:22px;top:85px}.s3{right:20px;bottom:70px}.s4{left:26px;bottom:56px}.s5{left:18px;top:98px}.format{grid-template-columns:1fr}.format ul{grid-column:1}.network-facts{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.orb,.flow-line{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+    .intelligence{background:linear-gradient(135deg,#eef6f7,#fff)}.intelligence-head{max-width:850px}.intelligence-head p{font-size:1.12rem;color:var(--muted)}.intelligence-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:42px}.intel-card{padding:25px 21px;background:white;border:1px solid var(--line);min-height:205px}.intel-card b{display:block;color:var(--green);font-size:1.6rem;margin-bottom:18px}.intel-card h3{margin-bottom:9px}.intel-card p{color:var(--muted);font-size:.91rem}.clinical-guardrail{margin-top:24px;padding:18px 22px;background:var(--ink);color:#c3cfda}.clinical-guardrail strong{color:white}@media(max-width:900px){.intelligence-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.intelligence-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+<nav class="wrap">
+<a class="brand" href="#top">
+<b>MEDPLEX</b>
+<span>PHYSICIAN NETWORK</span>
+</a>
+<div class="navlinks">
+<a href="#network">The network</a>
+<a href="#intelligence">Smart platform</a>
+<a href="#memberships">Health Card USA</a>
+<a href="#formats">Locations</a>
+<a class="btn btn-primary nav-cta" href="#connect">Connect</a>
+</div>
+</nav>
+</header>
+  <main id="top">
+    <section class="hero">
+<div class="wrap hero-grid">
+<div class="eyebrow">A smart AI-enabled physician network</div>
+<h1>Independent medicine.<span>Intelligently connected.</span>
+</h1>
+<p class="lead">MedPlex combines independent medicine with AI-enabled access, navigation and practice infrastructure. Houston begins with five planned hubs and ten HOPD satellites before the platform expands into other major U.S. markets.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#network">Explore the platform <span>→</span>
+</a>
+<a class="btn btn-ghost" href="#memberships">Discover Health Card USA</a>
+</div>
+<div class="hero-meta">
+<div>
+<strong>Houston cluster</strong>Initial regional platform</div>
+<div>
+<strong>5 hubs</strong>Houston market limit</div>
+<div>
+<strong>10 satellites</strong>Houston market limit</div>
+<div>
+<strong>Multi-market</strong>Long-term growth strategy</div>
+</div>
+</div>
+<div class="orb" aria-hidden="true">
+</div>
+</section>
+    <section class="network" id="network">
+<div class="wrap network-grid">
+<div class="network-copy reveal">
+<div class="eyebrow">One repeatable platform in two formats</div>
+<h2>A regional network designed to scale.</h2>
+<p>Houston is the initial regional cluster: five comprehensive hubs and ten HOPD satellites at full buildout. After the model is validated, the same operating platform can be replicated in other major U.S. markets while preserving local physician relationships and access.</p>
+<div class="network-facts">
+<div class="network-fact">
+<strong>Shared platform</strong>Brand, technology, intake, navigation and operating support</div>
+<div class="network-fact">
+<strong>Regional execution</strong>Local access and referral pathways within every market</div>
+</div>
+<a class="btn btn-primary" href="#formats">See the Houston model <span>→</span>
+</a>
+</div>
+<div class="system-map reveal" aria-label="MedPlex Physician Network system diagram">
+<div class="ring ring-one">
+</div>
+<div class="ring ring-two">
+</div>
+<div class="system-core">HOUSTON<br>PHYSICIAN<br>NETWORK</div>
+<div class="site-node hub s1">Fry Road<br>Flagship</div>
+<div class="site-node hub s2">Hub<br>02</div>
+<div class="site-node hub s3">Hub<br>03</div>
+<div class="site-node hub s4">Hub<br>04</div>
+<div class="site-node hub s5">Hub<br>05</div>
+<div class="satellite-label">+ 10 Houston HOPD satellites</div>
+</div>
+</div>
+</section>
+    <section class="intelligence" id="intelligence">
+<div class="wrap">
+<div class="intelligence-head reveal"><div class="eyebrow">The MedPlex intelligence layer</div><h2>Technology that removes friction from healthcare.</h2><p>One secure digital foundation connects patient access, physician support, Health Card USA and system operations. AI assists the people delivering care—it does not replace their judgment.</p></div>
+<div class="intelligence-grid reveal">
+<article class="intel-card"><b>01</b><h3>Smart access</h3><p>AI-assisted intake, scheduling and routing help patients reach the appropriate service and location.</p></article>
+<article class="intel-card"><b>02</b><h3>Care navigation</h3><p>Health Card USA uses member information and care pathways to support reminders, follow-up and coordination.</p></article>
+<article class="intel-card"><b>03</b><h3>Physician support</h3><p>Documentation assistance, workflow automation and practice analytics reduce nonclinical workload.</p></article>
+<article class="intel-card"><b>04</b><h3>Revenue intelligence</h3><p>Dashboards highlight scheduling, collections, capacity and operating performance across the network.</p></article>
+<article class="intel-card"><b>05</b><h3>Population insight</h3><p>Permissioned, de-identified analysis can help identify access gaps and preventive-health opportunities.</p></article>
+</div>
+<div class="clinical-guardrail reveal"><strong>Clinical control remains with licensed professionals.</strong> Physicians retain responsibility for diagnosis, treatment, supervision, records and all clinical decisions.</div>
+</div>
+</section>
+    <section class="intro" id="model">
+<div class="wrap intro-grid">
+<div class="reveal">
+<div class="eyebrow">The clinical network</div>
+<h2>Healthcare designed around people—not administrative silos.</h2>
+<p class="intro-copy">Patients can enter through primary care, Health Card USA, an employer program or a participating physician and remain connected as their needs change.</p>
+</div>
+<div class="service-list reveal">
+<div class="service">
+<span class="service-num">01</span>
+<h3>Family Medicine</h3>
+<small>The front door to coordinated care</small>
+</div>
+<div class="service">
+<span class="service-num">02</span>
+<h3>Wellness and Prevention</h3>
+<small>Comprehensive at hubs; focused programs across the system</small>
+</div>
+<div class="service">
+<span class="service-num">03</span>
+<h3>Behavioral Health</h3>
+<small>On-site and virtual-first mental health support</small>
+</div>
+<div class="service">
+<span class="service-num">04</span>
+<h3>Independent Specialists</h3>
+<small>Practice freedom with systemwide operational support</small>
+</div>
+</div>
+</div>
+</section>
+    <section class="platform">
+<div class="wrap">
+<div class="platform-head reveal">
+<div>
+<div class="eyebrow">Three ways into the network</div>
+<h2>One platform.<br>Different priorities.</h2>
+</div>
+<p>Select an audience to see how MedPlex removes friction and creates a more connected healthcare experience.</p>
+</div>
+<div class="path-tabs" role="tablist" aria-label="Audience">
+<button class="path-tab active" data-path="patients" role="tab" aria-selected="true">For patients</button>
+<button class="path-tab" data-path="physicians" role="tab" aria-selected="false">For physicians</button>
+<button class="path-tab" data-path="employers" role="tab" aria-selected="false">For employers</button>
+</div>
+<div class="path-panel active" id="patients">
+<div>
+<h3>Care that feels like one relationship.</h3>
+<p>Begin with family medicine or a Health Card USA evaluation, then move seamlessly into wellness, behavioral health and specialty care through one coordinated network.</p>
+</div>
+<div class="flow" aria-label="Patient care network">
+<div class="flow-line">
+</div>
+<div class="flow-core">Health Card<br>USA</div>
+<span class="flow-node n1">Family Medicine</span>
+<span class="flow-node n2">Specialists</span>
+<span class="flow-node n3">Behavioral Health</span>
+<span class="flow-node n4">Wellness</span>
+</div>
+</div>
+<div class="path-panel" id="physicians">
+<div>
+<h3>Independent medicine without the operational burden.</h3>
+<p>Use furnished clinical space, shared teams, scheduling, technology, billing, marketing and administration while retaining control of clinical decisions and your professional practice.</p>
+</div>
+<div class="flow">
+<div class="flow-line">
+</div>
+<div class="flow-core">Your<br>Practice</div>
+<span class="flow-node n1">Clinical Space</span>
+<span class="flow-node n2">Patient Access</span>
+<span class="flow-node n3">Billing + RCM</span>
+<span class="flow-node n4">Shared Team</span>
+</div>
+</div>
+<div class="path-panel" id="employers">
+<div>
+<h3>A healthier workforce with a clearer point of access.</h3>
+<p>Offer tiered memberships, preventive evaluations, care navigation, behavioral support and coordinated primary care through a program designed for companies of different sizes.</p>
+</div>
+<div class="flow">
+<div class="flow-line">
+</div>
+<div class="flow-core">Your<br>Workforce</div>
+<span class="flow-node n1">Health Checks</span>
+<span class="flow-node n2">Primary Care</span>
+<span class="flow-node n3">Wellness</span>
+<span class="flow-node n4">Care Navigation</span>
+</div>
+</div>
+</div>
+</section>
+    <section class="memberships" id="memberships">
+<div class="wrap">
+<div class="membership-head reveal">
+<div>
+<div class="eyebrow">Health Card USA</div>
+<h2>One membership relationship across the network.</h2>
+<p class="intro-copy">A systemwide access and navigation layer for individuals, families and company employees.</p>
+</div>
+<div class="toggle" aria-label="Membership audience">
+<button class="active" data-pricing="individual">Individuals</button>
+<button data-pricing="employer">Employers</button>
+</div>
+</div>
+<div class="tiers reveal">
+<article class="tier">
+<div class="tier-name">Health Check</div>
+<div class="price" data-individual="Free" data-employer="Free">Free</div>
+<ul>
+<li>Initial health evaluation</li>
+<li>Personal risk summary</li>
+<li>Recommended next steps</li>
+</ul>
+<div class="tag">The first step</div>
+</article>
+<article class="tier">
+<div class="tier-name">Essential</div>
+<div class="price" data-individual="$39 &lt;small&gt;/ month&lt;/small&gt;" data-employer="$25 &lt;small&gt;/ employee&lt;/small&gt;">$39 <small>/ month</small>
+</div>
+<ul>
+<li>Annual preventive evaluation</li>
+<li>Care navigation</li>
+<li>Priority scheduling</li>
+<li>Member wellness pricing</li>
+</ul>
+<div class="tag">Everyday access</div>
+</article>
+<article class="tier featured">
+<div class="tier-name">Plus</div>
+<div class="price" data-individual="$89 &lt;small&gt;/ month&lt;/small&gt;" data-employer="$55 &lt;small&gt;/ employee&lt;/small&gt;">$89 <small>/ month</small>
+</div>
+<ul>
+<li>Coordinated primary care</li>
+<li>Wellness consultation</li>
+<li>Behavioral health screening</li>
+<li>Chronic care support</li>
+</ul>
+<div class="tag">Recommended</div>
+</article>
+<article class="tier">
+<div class="tier-name">Complete</div>
+<div class="price" data-individual="$149 &lt;small&gt;/ month&lt;/small&gt;" data-employer="$95 &lt;small&gt;/ employee&lt;/small&gt;">$149 <small>/ month</small>
+</div>
+<ul>
+<li>Ongoing health management</li>
+<li>Expanded access</li>
+<li>Dedicated care coordination</li>
+<li>Annual progress plan</li>
+</ul>
+<div class="tag">High-touch care</div>
+</article>
+</div>
+<p style="color:var(--muted);font-size:.86rem;margin-top:22px">Preliminary membership pricing and benefits are subject to final program design, clinical scope and applicable agreements.</p>
+</div>
+</section>
+    <section class="space" id="space">
+<div class="wrap space-grid">
+<div class="space-copy reveal">
+<div class="eyebrow">Fry Road flagship</div>
+<h2>The prototype for every comprehensive hub.</h2>
+<p>The 23,000-square-foot third floor is organized around a central elevator arrival, shared clinical core and flexible physician capacity. It brings the full MedPlex Physician Network experience together above the hospital platform.</p>
+</div>
+<div class="stack reveal" aria-label="Conceptual space allocation">
+<div class="bar b1">
+<strong>Independent Physician Platform</strong>
+<span>7,000 SF</span>
+</div>
+<div class="bar b2">
+<strong>Family Medicine</strong>
+<span>4,500 SF</span>
+</div>
+<div class="bar b3">
+<strong>Wellness</strong>
+<span>2,500 SF</span>
+</div>
+<div class="bar b4">
+<strong>Behavioral Health</strong>
+<span>2,400 SF</span>
+</div>
+<div class="bar b5">
+<strong>Shared Clinical Core</strong>
+<span>2,300 SF</span>
+</div>
+<div class="bar b6">
+<strong>Welcome and Member Experience</strong>
+<span>3,300 SF</span>
+</div>
+<div class="bar b7">
+<strong>Operations</strong>
+<span>1,000 SF</span>
+</div>
+</div>
+</div>
+</section>
+    <section class="formats" id="formats">
+<div class="wrap">
+<div class="reveal">
+<div class="eyebrow">The Houston market plan</div>
+<h2>Two formats. One deliberately capped cluster.</h2>
+</div>
+<div class="format-grid">
+<article class="format reveal">
+<div class="format-number">05</div>
+<div>
+<small>Comprehensive MedPlex hubs</small>
+<h3>The complete Physician Network experience</h3>
+<p>Approximately 23,000 square feet at the Fry Road prototype, combining the full independent physician platform, family medicine, focused wellness, behavioral health, shared clinical services and Health Card USA navigation.</p>
+</div>
+<ul>
+<li>Full multispecialty physician platform</li>
+<li>Comprehensive wellness and prevention</li>
+<li>On-site behavioral and primary care</li>
+<li>Hospital connection within the MedPlex campus</li>
+</ul>
+</article>
+<article class="format reveal">
+<div class="format-number">10</div>
+<div>
+<small>HOPD physician network satellites</small>
+<h3>Neighborhood access with systemwide reach</h3>
+<p>Approximately 8,000 square feet above an 8,000-square-foot HOPD, scaled for local access without duplicating a full wellness department.</p>
+</div>
+<ul>
+<li>Primary care and rotating specialists</li>
+<li>Behavioral telehealth and care navigation</li>
+<li>Health Card USA enrollment and employer access</li>
+<li>Referral pathways to comprehensive hubs</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+    <section class="cta" id="connect">
+<div class="wrap reveal">
+<div class="eyebrow" style="color:#17365d">Beginning at MedPlex Fry Road</div>
+<h2>One smart platform. Fifteen Houston access points. Built to scale.</h2>
+<p>MedPlex Physician Network combines physician independence, connected care and AI-enabled infrastructure for patients, practices and employers.</p>
+<a class="btn" href="#top">Return to the network <span>→</span>
+</a>
+</div>
+<div class="cta-mark" aria-hidden="true">15</div>
+</section>
+  </main>
+  <footer>
+<div class="wrap foot">
+<div>
+<div class="brand">
+<b>MEDPLEX</b>
+<span>PHYSICIAN NETWORK</span>
+</div>
+<p>Independent Physicians. Connected Care.</p>
+</div>
+<small>Houston limit: five hubs + ten HOPDs | designed for multi-market expansion</small>
+</div>
+</footer>
+  <script>
+    const tabs=document.querySelectorAll('.path-tab');tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>{x.classList.remove('active');x.setAttribute('aria-selected','false')});document.querySelectorAll('.path-panel').forEach(p=>p.classList.remove('active'));t.classList.add('active');t.setAttribute('aria-selected','true');document.getElementById(t.dataset.path).classList.add('active')}));
+    const priceButtons=document.querySelectorAll('[data-pricing]');priceButtons.forEach(b=>b.addEventListener('click',()=>{priceButtons.forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.price').forEach(p=>p.innerHTML=p.dataset[b.dataset.pricing])}));
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
+  </script>
+</body></html>
